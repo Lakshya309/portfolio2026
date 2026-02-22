@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
-import NewNav from "../../../components/NewNav";
+import CreativeNav from "../../../components/CreativeNav";
 
 export default function ContactFormPage() {
   const searchParams = useSearchParams();
@@ -14,7 +14,7 @@ export default function ContactFormPage() {
     <main className="bg-light_bronze text-cornsilk min-h-screen">
       {/* NAV */}
       <div className="relative z-50">
-        <NewNav />
+        <CreativeNav />
       </div>
 
       {/* BANNER */}
@@ -49,12 +49,12 @@ export default function ContactFormPage() {
           <div>
             <h2 className="text-3xl font-galgo">
               {isConsultation
-                ? "Project consultation"
+                ? "Work consultation"
                 : "General inquiry"}
             </h2>
             <p className="text-cornsilk/60 mt-2 font-roboto">
               {isConsultation
-                ? "Tell me about your project, goals, and expectations."
+                ? "Tell me about your work, goals, and expectations."
                 : "Let’s start a conversation."}
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function ContactFormPage() {
           <div>
             <label className="text-sm text-cornsilk/60 font-roboto">
               {isConsultation
-                ? "Project details"
+                ? "Work details"
                 : "Your message"}
             </label>
             <textarea

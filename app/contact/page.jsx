@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 
+
 export default function ContactPage() {
   return (
     <main className="bg-light_bronze text-tea_green-100 overflow-hidden">
@@ -32,7 +33,7 @@ export default function ContactPage() {
 
           <ContactCard
             index="02"
-            title="Project Consultation"
+            title="Work Consultation"
             description="Deep dives into scope, architecture, timelines, and execution."
           />
         </div>

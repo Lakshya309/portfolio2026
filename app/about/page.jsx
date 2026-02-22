@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import NewNav from "../../components/NewNav";
+import CreativeNav from "../../components/CreativeNav";
 import { Timeline } from "../../components/ui/timeline";
 import { projects } from "../data";
 import Image from "next/image";
@@ -61,7 +61,7 @@ const AboutPage = () => {
 
   return (
     <div className="bg-tea_green-100 text-cornsilk selection:bg-light_bronze selection:text-tea_green-100">
-      <NewNav />
+      <CreativeNav />
 
       {/* ================= HERO ================= */}
       <section className="min-h-screen flex items-center px-6 md:px-24">
@@ -99,7 +99,7 @@ const AboutPage = () => {
                 </span>
 
                 <h2 className="text-4xl uppercase mb-6 font-galgo">
-                  Projects in {year}
+                  Work in {year}
                 </h2>
 
                 <p className="text-tea_green-100/70 max-w-md font-roboto">
